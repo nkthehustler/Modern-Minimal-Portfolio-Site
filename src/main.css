@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter&family=Pacifico&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+  font-family: "Fira Code";
+  font-weight: 600;
+}
+
+.nav {
+  font-family: "Fira Code";
+  font-weight: 400;
+}
+
+.regular {
+  font-family: "Fira Code";
+  font-weight: 100;
+}
+
+.resume {
+  box-shadow: rgb(163, 230, 53, 0.1) 0px 5px 12px;
+}
+
+.project-title {
+  font-family: "Fira Code";
+  font-weight: 600;
+}
+
+/* ////////////////////////////////////////////// page scroll transitions //////////////////////////////////////////////////// */
+
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.8s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
